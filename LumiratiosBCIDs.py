@@ -103,6 +103,8 @@ def fillplot(fill):
 
     BCIDs = sorted(BCIDs)
     NUMs = sorted(NUMs)
+    NUMs.append(40010) #prevent index out of range
+    BCIDs.append(4000) #prevent index out of range
     ratio = [BCIDratio(fill,NUMs[0])]
     subratio = [BCIDratio(fill,NUMs[0])]
     subBCIDs = [BCIDs[0]]
